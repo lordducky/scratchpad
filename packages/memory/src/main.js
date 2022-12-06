@@ -22,6 +22,4 @@ function shuffle(array) {
     array[i] = t;
   }
 }
-module.exports = {
-  getRandomizedCards
-};
+export default getRandomizedCards;

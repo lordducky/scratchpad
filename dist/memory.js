@@ -1,7 +1,8 @@
-(function (factory) {
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  factory();
-})((function () { 'use strict';
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.getRandomizedCards = factory());
+})(this, (function () { 'use strict';
 
   const characterArray = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
   function getRandomizedCards(numberOfPairs, randomize = true) {
@@ -27,8 +28,7 @@
       array[i] = t;
     }
   }
-  module.exports = {
-    getRandomizedCards
-  };
+
+  return getRandomizedCards;
 
 }));

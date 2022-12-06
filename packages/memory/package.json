@@ -4,7 +4,7 @@
   "main": "random.js",
   "license": "MIT",
   "scripts": {
-    "build": "rollup src/main.js --file dist.js --format umd"
+    "build": "rollup src/main.js --file ../../dist/memory.js --format umd --name getRandomizedCards"
   },
   "dependencies": {
     "rollup": "^3.6.0"
