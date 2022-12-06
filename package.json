@@ -1,0 +1,14 @@
+{
+  "name": "scratchpad",
+  "version": "1.0.0",
+  "main": "bundle.js",
+  "repository": "git@github.com:lordducky/scratchpad.git",
+  "author": "Xi-Lin Ye",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
