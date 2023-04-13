@@ -12,6 +12,7 @@
     ]
   },
   "scripts": {
-    "memory": "yarn workspace memory"
+    "memory": "yarn workspace memory",
+    "knights": "yarn workspace knights"
   }
 }
