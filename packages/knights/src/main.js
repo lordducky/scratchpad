@@ -1,7 +1,7 @@
 const validateSize = (size) => {
-  return size.length !== 2 ||
-    size[0] < 0 ||
-    size[1] < 0;
+  return size.length === 2 &&
+    size[0] > 0 &&
+    size[1] > 0;
 }
 const generateRandomCoords = (size) => {
   const x = Math.floor(Math.random() * size[0]);
