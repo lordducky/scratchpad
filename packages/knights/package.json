@@ -6,7 +6,7 @@
   "scripts": {
     "build": "yarn build:js && yarn copy-assets",
     "build:js": "rollup src/main.js --file ../../docs/knights/KnightsApi.js --format umd --name KnightsApi",
-    "copy-assets": "mkdir -p ../../docs/knights && cp -rf ./assets ../../docs/knights/assets"
+    "copy-assets": "mkdir -p ../../docs/knights && cp -rf ./assets ../../docs/knights"
   },
   "dependencies": {
     "rollup": "^3.6.0"
